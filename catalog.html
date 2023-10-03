@@ -4,6 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Гостиницы Седоны</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
   </head>
 
   <body>
@@ -12,7 +14,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="logo" href="index.html">
-          <img src="images/logo.svg" width="138" height="64" alt="Логотип City of Sedona.">
+          <img src="images/sedona-logo.svg" width="138" height="64" alt="Логотип City of Sedona.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -50,7 +52,7 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
 
@@ -118,6 +120,9 @@
           <select name="select-controle" aria-label="Сортировка">
             <option value="cheap" selected>Сначала дешевые</option>
           </select>
+          <ul class="catalog-view">
+            li.catalog-view-item
+          </ul>
           <a class="catalog-search-button catalog-search-button-current" href="#" aria-label="page">
             <span class="visually-hidden">Показать карточки</span>
           </a>
@@ -135,7 +140,7 @@
               <h3 class="product-name">Amara Resort &amp; Spa</h3>
             </a>
             <a class="product-link" href="#" tabindex="-1">
-              <img class="product-image" src="images/hotel-1.jpg" width="300" height="212"
+              <img class="product-image" src="images/catalog/hotel-1.jpg" width="300" height="212"
                 alt="Вид на скалистый каньон, освещенный звездным ночным небом.">
             </a>
             <div class="product-card-wrapper">
@@ -156,7 +161,7 @@
               <h3 class="product-name">Villas at Poco Diablo</h3>
             </a>
             <a class="product-link" href="#" tabindex="-1">
-              <img class="product-image" src="images/hotel-2.jpg" width="300" height="212"
+              <img class="product-image" src="images/catalog/hotel-2.jpg" width="300" height="212"
                 alt="Горный хребет с радугой,  пересекающей небо">
             </a>
             <div class="product-card-wrapper">
@@ -177,7 +182,7 @@
               <h3 class="product-name">Desert Quail Inn</h3>
             </a>
             <a class="product-link" href="#" tabindex="-1">
-              <img class="product-image" src="images/hotel-3.jpg" width="300" height="212"
+              <img class="product-image" src="images/catalog/hotel-3.jpg" width="300" height="212"
                 alt="Гора с деревьями на переднем плане.">
             </a>
             <div class="product-card-wrapper">
@@ -198,7 +203,7 @@
               <h3 class="product-name">GreenTree Inn</h3>
             </a>
             <a class="product-link" href="#" tabindex="-1">
-              <img class="product-image" src="images/hotel-4.jpg" width="300" height="212"
+              <img class="product-image" src="images/catalog/hotel-4.jpg" width="300" height="212"
                 alt="Ночное небо с горой на переднем плане.">
             </a>
             <div class="product-card-wrapper">
@@ -261,6 +266,7 @@
       </section>
 
       <div class="page-footer-social">
+        <h2 class="visually-hidden">Ссылки на социальные сети.</h2>
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
@@ -279,11 +285,12 @@
           </li>
         </ul>
         <div class="phone-number">
+          <h2 class="visually-hidden">Номер телефона.</h2>
           <a class="phone-number-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="footer-logo">
           <a class="footer-logo-link" href="https://htmlacademy.ru/">
-            <img src="images/footer-logo.svg" width="115" height="33" alt="Логотип HTML-Academy.">
+            <img src="images/html-academy.svg" width="115" height="33" alt="Логотип HTML-Academy.">
           </a>
         </div>
       </div>
