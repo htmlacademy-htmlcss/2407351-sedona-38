@@ -6,6 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -17,8 +18,8 @@
           <img src="images/sedona-logo.svg" width="138" height="64" alt="Логотип City of Sedona.">
         </a>
         <ul class="navigation-list">
-          <li class="navigation-item navigation-item-current">
-            <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -29,12 +30,12 @@
         </ul>
         <ul class="navigation-user">
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+            <a class="navigation-link navigation-user-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+            <a class="navigation-link navigation-user-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
@@ -112,7 +113,7 @@
           <li class="servies-item card">
             <h3 class="card-title">Еда</h3>
             <p class="card-discription">Всегда заказывайте
-              топовый фирменный бурер, вы не разочаруетесь!</p>
+              топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="servies-item card">
             <h3 class="card-title">Сувениры</h3>
@@ -137,8 +138,8 @@
 
       <section class="subscribe">
         <h2 class="sect-caption subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="sect-description subscribe-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-          предложения гостиниц в Седоне</p>
+        <p class="sect-description subscribe-description">Только полезная информация и никакого спама, честное
+          бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">
             <span class="visually-hidden">Email</span>
