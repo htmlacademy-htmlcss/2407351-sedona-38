@@ -63,7 +63,7 @@ body {
   background-color: #82b3d3;
   text-transform: uppercase;
   text-decoration: none;
-  border: none;
+  border: 0;
 }
 
 .index-hero {
@@ -89,7 +89,6 @@ body {
 .card {
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
 }
 
 .card-title {
@@ -107,7 +106,7 @@ body {
   color: #ffffff;
 }
 
-.advantages-card .card-title {
+.advantages-card-title {
   color: #ffffff;
 }
 
@@ -175,7 +174,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.phone-link {
+.phone-number-link {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
