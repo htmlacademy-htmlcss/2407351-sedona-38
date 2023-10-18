@@ -61,7 +61,7 @@ body {
 .navigation-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   width: 440px;
 }
 
@@ -79,7 +79,7 @@ body {
   margin: 0;
   margin-left: auto;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   width: 300px;
 }
 
@@ -130,7 +130,7 @@ body {
 .card-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
@@ -222,7 +222,7 @@ body {
   margin: 0;
   padding: 0;
   width: 142px;
-  list-style: none;
+  list-style-type: none;
   display: flex;
 }
 
@@ -299,7 +299,7 @@ body {
 .catalog-filter-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .catalog-filter-buttons {
@@ -355,7 +355,7 @@ body {
   margin: 0;
   padding: 0;
   width: 160px;
-  list-style: none;
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
