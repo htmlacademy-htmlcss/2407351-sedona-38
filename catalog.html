@@ -83,7 +83,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-type">
               <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -106,15 +106,17 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button catalog-filter-accept" type="submit">Применить</button>
-            <button class="button catalog-filter-reset" type="reset">Сбросить</button>
+            <div class="catalog-filter-buttons">
+              <button class="button catalog-filter-accept" type="submit">Применить</button>
+              <button class="button catalog-filter-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </div>
       </header>
       <!-- header -->
 
       <!-- main -->
-      <main class="catalog-main">
+      <main class="main-container catalog-main">
 
         <section class="catalog">
 
@@ -276,7 +278,7 @@
         </section>
 
         <div class="page-footer-container">
-          <div class="social">
+          <section class="social">
             <h2 class="visually-hidden">Ссылки на социальные сети.</h2>
             <ul class="social-list">
               <li class="social-item">
@@ -295,16 +297,17 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="phone-number">
+          </section>
+          <section class="phone-number">
             <h2 class="visually-hidden">Номер телефона.</h2>
             <a class="phone-number-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </div>
-          <div class="footer-logo">
+          </section>
+          <section class="footer-logo">
+            <h2 class="visually-hidden">Партнёр</h2>
             <a class="footer-logo-link" href="https://htmlacademy.ru/">
               <img src="images/html-academy.svg" width="115" height="33" alt="Логотип HTML-Academy.">
             </a>
-          </div>
+          </section>
         </div>
       </footer>
       <!-- footer -->
