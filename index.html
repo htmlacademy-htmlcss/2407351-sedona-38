@@ -15,7 +15,7 @@
 
       <!-- header -->
       <header class="page-header">
-        <nav class="navigation">
+        <nav class="navigation content-wrapper">
           <a class="logo" href="index.html" aria-current="page">
             <img src="images/sedona-logo.svg" width="138" height="64" alt="Логотип City of Sedona.">
           </a>
@@ -32,12 +32,12 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-link navigation-user-search" href="#">
+              <a class="navigation-user-link navigation-user-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link navigation-user-favorites" href="#">
+              <a class="navigation-user-link navigation-user-favorites" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
@@ -47,7 +47,7 @@
           </ul>
         </nav>
 
-        <section class="index-hero">
+        <section class="index-hero content-wrapper">
           <h1 class="visually-hidden">Сайт поиска отелей в Седоне</h1>
           <p class="visually-hidden">Welcome to the gorgeous sedona. Because the grand canyon sucks!</p>
           <img class="index-hero-image" src="images/index/hero-welcome.svg" width="458" height="352" alt=""
@@ -62,8 +62,12 @@
 
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <p class="sect-caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="sect-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="content-wrapper">
+            <p class="sect-caption">Седона&nbsp;— небольшой городок&nbsp;в&nbsp;Аризоне, <span
+                class="line-break-span">заслуживающий
+                большего!</span></p>
+            <p class="sect-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <ul class="advantages-list card-list">
             <li class="advantages-item">
               <div class="advantages-card card">
@@ -104,8 +108,10 @@
 
         <section class="servies">
           <h2 class="visually-hidden">Услуги</h2>
-          <p class="sect-caption">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="sect-description">Опытный персонал и качественное обслуживание!</p>
+          <div class="content-wrapper">
+            <p class="sect-caption">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="sect-description">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="servies-list card-list">
             <li class="servies-item card">
               <h3 class="card-title">Жильё</h3>
@@ -125,10 +131,11 @@
           </ul>
         </section>
 
-        <section class="hotel-search">
+        <section class="hotel-search content-wrapper">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="sect-caption">Заинтересовались?</p>
-          <p class="sect-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+          <p class="sect-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+            гостиниц
             в
             Седоне</p>
           <button class="button hotel-search-button secondary-color" type="button">Поиск гостиницы в Седоне</button>
@@ -139,7 +146,7 @@
       <!-- footer -->
       <footer class="page-footer">
 
-        <section class="subscribe subscribe-theme-custom">
+        <section class="subscribe content-wrapper subscribe-theme-custom">
           <h2 class="sect-caption subscribe-title">Подпишитесь на рассылку</h2>
           <p class="sect-description subscribe-description">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
@@ -153,7 +160,7 @@
           </form>
         </section>
 
-        <div class="page-footer-container">
+        <div class="page-footer-container content-wrapper">
           <section class="social">
             <h2 class="visually-hidden">Ссылки на социальные сети.</h2>
             <ul class="social-list">
