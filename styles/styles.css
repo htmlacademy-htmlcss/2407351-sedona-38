@@ -79,13 +79,15 @@ body {
   padding: 0;
   list-style-type: none;
   width: 440px;
+  display: flex;
 }
 
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  text-align: center;
+  display: block;
+  padding: 16px 20px;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
@@ -102,21 +104,20 @@ body {
 }
 
 .navigation-user-link {
-  width: 44px;
-  height: 64px;
+  width: 20px;
+  height: 20px;
   display: block;
+  background-repeat: no-repeat;
 }
 
 .navigation-user-search {
   background-image: url("../images/icons/search.svg");
   background-size: 18px 18px;
-  background-repeat: no-repeat;
 }
 
 .navigation-user-favorites {
   background-image: url("../images/icons/heart.svg");
   background-size: 18px 17px;
-  background-repeat: no-repeat;
 }
 
 .button {
@@ -129,10 +130,12 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border: 0;
+  border-radius: 4px;
+  display: block;
 }
 
 .index-hero {
-  background-color: #2a6391;
+  background-color: #529eca;
   background-image: url("../images/index/index-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -144,16 +147,17 @@ body {
   margin: 0 auto;
 }
 
-.index-main {
-  text-align: center;
-}
-
 .sect-caption {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.sect-description {
+  text-align: center;
 }
 
 .card-list {
@@ -170,6 +174,7 @@ body {
   padding: 0 80px;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
 }
 
 .card-title {
@@ -210,19 +215,32 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.subscribe {
-  text-align: center;
+.hotel-search-button {
+  margin: 0 auto;
 }
 
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
 .newsletter-field {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  width: 452px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+  background-color: #f2f2f2;
 }
 
 .newsletter-field::placeholder {
   color: #000000;
   opacity: 0.6;
+}
+
+.newsletter-button {
+  border-radius: 0 4px 4px 0;
 }
 
 .subscribe-theme-custom {
@@ -292,7 +310,7 @@ body {
   background-image: url("../images/catalog/catalog-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #756157;
+  background-color: #529eca;
 }
 
 .catalog-hero-title {
