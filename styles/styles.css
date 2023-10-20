@@ -227,6 +227,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .newsletter-field {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -239,8 +240,8 @@ body {
 }
 
 .newsletter-field::placeholder {
-  color: #000000;
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
 }
 
 .newsletter-button {
