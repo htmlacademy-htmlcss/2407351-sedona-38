@@ -60,6 +60,10 @@ body {
   flex-grow: 1;
 }
 
+.content-wrapper {
+  padding: 0 70px;
+}
+
 .page-header {
   color: #000000;
   background-color: #ffffff;
@@ -305,7 +309,6 @@ body {
 }
 
 .catalog-hero {
-  padding: 0 70px;
   color: #ffffff;
   background-image: url("../images/catalog/catalog-hero.jpg");
   background-size: cover;
@@ -548,10 +551,6 @@ body {
   line-height: 26px;
   background: none;
   color: #000000;
-}
-
-.content-wrapper {
-  padding: 0 70px;
 }
 
 .brand-color {
