@@ -15,7 +15,7 @@
 
       <!-- header -->
       <header class="page-header">
-        <nav class="navigation">
+        <nav class="navigation content-wrapper">
           <a class="logo" href="index.html">
             <img src="images/sedona-logo.svg" width="138" height="64" alt="Логотип City of Sedona.">
           </a>
@@ -32,12 +32,12 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-link navigation-user-search" href="#">
+              <a class="navigation-user-link navigation-user-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link navigation-user-favorites" href="#">
+              <a class="navigation-user-link navigation-user-favorites" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
@@ -46,7 +46,8 @@
             </li>
           </ul>
         </nav>
-        <div class="catalog-hero">
+
+        <div class="catalog-hero content-wrapper">
           <h1 class="catalog-hero-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -60,7 +61,7 @@
           </ul>
 
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-infr">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -83,7 +84,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-type">
               <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -106,17 +107,20 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button catalog-filter-accept" type="submit">Применить</button>
-            <button class="button catalog-filter-reset" type="reset">Сбросить</button>
+            <div class="catalog-filter-buttons">
+              <button class="button catalog-filter-accept" type="submit">Применить</button>
+              <button class="button catalog-filter-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </div>
+
       </header>
       <!-- header -->
 
       <!-- main -->
-      <main class="catalog-main">
+      <main class="main-container catalog-main">
 
-        <section class="catalog">
+        <section class="catalog content-wrapper">
 
           <header class="catalog-header">
             <h2 class="catalog-offers-found">Найдено гостиниц: 38</h2>
@@ -161,9 +165,7 @@
                 <div class="product-stars stars-4" role="img" aria-label="Четыре звезды">
                   <span class="visually-hidden">Четыре звезды</span>
                 </div>
-                <p class="product-rating">
-                  Рейтинг: <span class="product-rating-number">8,5</span>
-                </p>
+                <p class="product-rating">Рейтинг: 8,5</p>
               </div>
             </li>
             <li class="product-item">
@@ -182,9 +184,7 @@
                 <div class="product-stars stars-4" role="img" aria-label="Четыре звезды">
                   <span class="visually-hidden">Четыре звезды</span>
                 </div>
-                <p class="product-rating">
-                  Рейтинг: <span class="product-rating">9,2</span>
-                </p>
+                <p class="product-rating">Рейтинг: 9,2</p>
               </div>
             </li>
             <li class="product-item">
@@ -203,9 +203,7 @@
                 <div class="product-stars stars-3" role="img" aria-label="Три звезды">
                   <span class="visually-hidden">Три звезды</span>
                 </div>
-                <p class="product-rating">
-                  Рейтинг: <span class="product-rating">6,9</span>
-                </p>
+                <p class="product-rating">Рейтинг: 6,9</p>
               </div>
             </li>
             <li class="product-item">
@@ -224,9 +222,7 @@
                 <div class="product-stars stars-2" role="img" aria-label="Две звезды">
                   <span class="visually-hidden">Две звезды</span>
                 </div>
-                <p class="product-rating">
-                  Рейтинг: <span class="product-rating">5,0</span>
-                </p>
+                <p class="product-rating">Рейтинг: 5,0</p>
               </div>
             </li>
           </ul>
@@ -261,9 +257,9 @@
       <!-- footer -->
       <footer class="page-footer">
 
-        <section class="subscribe">
+        <section class="subscribe content-wrapper">
           <h2 class="sect-caption subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="sect-description subscribe-description">Только полезная информация и никакого спама, честное
+          <p class="sect-description subscribe-description">Только полезная информация и&nbsp;никакого спама, честное
             бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email">
@@ -275,8 +271,8 @@
           </form>
         </section>
 
-        <div class="page-footer-container">
-          <div class="social">
+        <div class="page-footer-container content-wrapper">
+          <section class="social">
             <h2 class="visually-hidden">Ссылки на социальные сети.</h2>
             <ul class="social-list">
               <li class="social-item">
@@ -295,16 +291,17 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="phone-number">
+          </section>
+          <section class="phone-number">
             <h2 class="visually-hidden">Номер телефона.</h2>
             <a class="phone-number-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </div>
-          <div class="footer-logo">
+          </section>
+          <section class="footer-logo">
+            <h2 class="visually-hidden">Партнёр</h2>
             <a class="footer-logo-link" href="https://htmlacademy.ru/">
               <img src="images/html-academy.svg" width="115" height="33" alt="Логотип HTML-Academy.">
             </a>
-          </div>
+          </section>
         </div>
       </footer>
       <!-- footer -->
