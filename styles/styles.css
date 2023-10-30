@@ -71,6 +71,7 @@ body {
 
 .navigation {
   display: flex;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -235,7 +236,7 @@ body {
 }
 
 .card-title {
-  position: relative;
+  /* position: relative; */
   margin: 0;
   margin-bottom: 30px;
   font-size: 24px;
@@ -246,23 +247,20 @@ body {
 
 .advantages .card-title::after {
   content: "";
-  position: absolute;
-  bottom: -32px;
-  left: 0;
-  right: 0;
+  /* position: absolute; */
+  /* bottom: -32px; */
+  /* left: 0; */
+  /* right: 0; */
+  display: block;
   width: 60px;
   height: 2px;
-  margin: auto;
-  background-color: #000;
+  margin: 30px auto 0;
+  background-color: #000000;
   opacity: 0.3;
 }
 
-.advantages-list .card-title {
-  margin-bottom: 62px;
-}
-
 .advantages-card .card-title::after {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .card-description {
@@ -272,7 +270,7 @@ body {
 .advantages-item {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 100%;
   background-color: #82b3d3;
 }
 
@@ -289,6 +287,7 @@ body {
 }
 
 .advantages-image {
+  display: block;
   width: 800px;
 }
 
@@ -667,22 +666,22 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-top: 40px;
   padding: 0;
+  gap: 8px;
   list-style-type: none;
 }
 
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .pagination-link {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
+  padding: 0 10px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
