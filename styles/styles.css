@@ -161,7 +161,6 @@ body {
 
 .index-hero {
   position: relative;
-  margin-bottom: 69px;
   padding-top: 51px;
   padding-bottom: 82px;
   text-align: center;
@@ -200,8 +199,10 @@ body {
   text-transform: uppercase;
 }
 
-.advantages {
-  margin-bottom: 64px;
+.advantages-header {
+  padding-top: 69px;
+  padding-bottom: 69px;
+  margin-bottom: 21px;
 }
 
 .advantages .sect-caption {
@@ -210,12 +211,7 @@ body {
 
 .sect-description {
   margin: 0;
-  margin-bottom: 54px;
   text-align: center;
-}
-
-.advantages .sect-description {
-  margin-bottom: 90px;
 }
 
 .card-list {
@@ -304,8 +300,9 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.servies .sect-description {
-  margin-bottom: 64px;
+.servies-header {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .servies-item:nth-child(odd) {
@@ -316,6 +313,10 @@ body {
   padding: 96px 290px;
 }
 
+.hotel-search .sect-description {
+  margin-bottom: 54px;
+}
+
 .hotel-search-button {
   margin: 0 auto;
   font-size: 20px;
@@ -324,6 +325,10 @@ body {
 
 .subscribe {
   padding: 96px 258px 104px;
+}
+
+.subscribe .sect-description {
+  margin-bottom: 54px;
 }
 
 .newsletter-form {
