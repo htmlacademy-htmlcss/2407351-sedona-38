@@ -269,10 +269,6 @@ body {
   background-color: #82b3d3;
 }
 
-.advantages-item:nth-child(even) .advantages-image-wrapper {
-  order: -1;
-}
-
 .advantages-card {
   color: #ffffff;
 }
@@ -283,9 +279,12 @@ body {
 
 .advantages-image {
   display: block;
+  align-self: center;
   width: 800px;
-  height: 100%;
-  object-fit: cover;
+}
+
+.advantages-item:nth-child(even) .advantages-image {
+  order: -1;
 }
 
 .advantages-items {
@@ -317,9 +316,9 @@ body {
 .servies-item::before {
   content: "";
   display: block;
-  width: 75px;
-  height: 72px;
-  margin: 0 auto 30px;
+  width: 77px;
+  height: 76px;
+  margin: -2px auto 28px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -330,6 +329,7 @@ body {
 }
 
 .servies-icon-2::before {
+  width: 76px;
   background-image: url("../images/index/servies-burger.svg");
 }
 
@@ -365,6 +365,7 @@ body {
 }
 
 .newsletter-field {
+  box-sizing: border-box;
   width: 452px;
   padding: 12px 20px;
   font-family: "PT Sans", sans-serif;
@@ -401,8 +402,8 @@ body {
 .page-footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 45px;
+  align-items: start;
+  padding-top: 40px;
   padding-bottom: 30px;
 }
 
@@ -414,8 +415,9 @@ body {
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  width: 142px;
+  width: 190px;
   margin: 0;
+  margin-right: 50px;
   padding: 0;
   list-style-type: none;
 }
@@ -424,6 +426,7 @@ body {
   display: block;
   width: 47px;
   height: 40px;
+  margin: 5px 0;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -441,15 +444,29 @@ body {
   background-size: 22px 17px;
 }
 
+.phone-number {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
 .phone-number-link {
+  display: flex;
+  margin: 5px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
 }
 
+.footer-logo {
+  margin-left: 98px;
+}
+
 .footer-logo-link {
   display: flex;
   align-items: center;
+  height: 50px;
 }
 
 .academy-link img {
@@ -512,6 +529,7 @@ body {
 
 .catalog-filter-group {
   margin: 0;
+  margin-right: 70px;
   padding: 0;
   border: 0;
 }
@@ -519,14 +537,6 @@ body {
 .catalog-filter-title {
   margin: 0;
   padding: 0;
-}
-
-.catalog-filter-infr {
-  margin-right: 70px;
-}
-
-.catalog-filter-type {
-  margin-right: auto;
 }
 
 .catalog-filter-list {
@@ -552,6 +562,11 @@ body {
   margin-bottom: 0;
 }
 
+.filter-wrap {
+  display: flex;
+  margin-left: auto;
+}
+
 .catalog-filter-buttons {
   align-self: flex-end;
 }
@@ -575,12 +590,13 @@ body {
 
 .catalog-header {
   display: flex;
-  align-items: center;
+  align-items: start;
   margin-bottom: 40px;
   color: #000000;
 }
 
 .catalog-offers-found {
+  align-self: center;
   margin: 0;
   margin-right: auto;
   font-size: 30px;
@@ -589,8 +605,9 @@ body {
 }
 
 .catalog-header select {
-  width: 292px;
+  min-width: 292px;
   margin-right: 70px;
+  margin-left: 20px;
   padding: 10px 16px;
   font-family: inherit;
   font-size: 18px;
@@ -600,11 +617,11 @@ body {
 }
 
 .catalog-view {
-  display: flex;
-  justify-content: space-between;
-  width: 160px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   margin: 0;
   padding: 0;
+  gap: 8px;
   list-style-type: none;
 }
 
@@ -638,12 +655,13 @@ body {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(3, 342px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   margin: 0;
-  margin-bottom: 40px;
   padding: 0;
+  padding-bottom: 40px;
   list-style-type: none;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .product-item {
@@ -671,6 +689,10 @@ body {
   line-height: 28px;
 }
 
+.product-name-link {
+  align-self: start;
+}
+
 .product-image {
   display: block;
   width: 300px;
@@ -688,13 +710,21 @@ body {
   text-align: center;
 }
 
+.product-rating-wrapper {
+  grid-column: -1 / 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
 .product-stars {
   width: 0;
   height: 17px;
-  margin: 10px 0;
+  padding: 10px 0;
   background-image: url("../images/icons/star.svg");
-  background-repeat: space;
+  background-repeat: space no-repeat;
   background-size: 18px 17px;
+  background-position: left center;
 }
 
 .stars-1 {
@@ -728,14 +758,13 @@ body {
 }
 
 .catalog-footer {
-  border-top: 1px solid #e6e6e6;
+  padding-top: 40px;
 }
 
 .pagination {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-top: 39px;
   padding: 0;
   gap: 8px;
   list-style-type: none;
