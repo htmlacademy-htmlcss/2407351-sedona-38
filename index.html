@@ -32,12 +32,12 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-search" href="#">
+              <a class="navigation-link navigation-user-link navigation-user-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-favorites" href="#">
+              <a class="navigation-link navigation-user-link navigation-user-favorites" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
@@ -51,7 +51,7 @@
           <h1 class="visually-hidden">Сайт поиска отелей в Седоне</h1>
           <p class="visually-hidden">Welcome to the gorgeous sedona. Because the grand canyon sucks!</p>
           <img class="index-hero-image" src="images/index/hero-welcome.svg" width="458" height="352" alt=""
-            aria-hidden="true" focusable="false">
+            aria-hidden="true">
         </section>
 
       </header>
@@ -62,16 +62,17 @@
 
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <div class="content-wrapper">
+          <header class="advantages-header content-wrapper">
             <p class="sect-caption">Седона&nbsp;— небольшой городок&nbsp;в&nbsp;Аризоне, <span
                 class="line-break-span">заслуживающий
                 большего!</span></p>
             <p class="sect-description">Рассмотрим причины, по&nbsp;которым Седона круче, чем Гранд-Каньон!</p>
-          </div>
+          </header>
           <ul class="advantages-list card-list">
             <li class="advantages-item">
               <div class="advantages-card card">
-                <h3 class="card-title advantages-card-title">Небольшой городок</h3>
+                <h3 class="card-title advantages-card-title">Настоящий <span class="line-break-span"> городок</span>
+                </h3>
                 <p class="card-description">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
@@ -80,17 +81,20 @@
               <ul class="advantages-items card-list">
                 <li class="advantages-items-card card">
                   <h3 class="card-title">Небольшая
-                    площадь</h3>
+                    <span class="line-break-span">площадь</span>
+                  </h3>
                   <p class="card-description">Все достопримечательности находятся очень близко</p>
                 </li>
                 <li class="advantages-items-card card">
                   <h3 class="card-title">Красивая
-                    дорога</h3>
+                    <span class="line-break-span">дорога</span>
+                  </h3>
                   <p class="card-description">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
                 </li>
                 <li class="advantages-items-card card">
                   <h3 class="card-title">Мало
-                    туристов</h3>
+                    <span class="line-break-span">туристов</span>
+                  </h3>
                   <p class="card-description">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
                 </li>
               </ul>
@@ -98,7 +102,8 @@
             <li class="advantages-item">
               <div class="advantages-card card">
                 <h3 class="card-title advantages-card-title">Там есть
-                  мост дьявола</h3>
+                  <span class="line-break-span">мост дьявола</span>
+                </h3>
                 <p class="card-description">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, разумеется</p>
               </div>
               <img class="advantages-image" src="images/index/advantages-2.jpg" width="800" height="385"
@@ -109,23 +114,27 @@
 
         <section class="servies">
           <h2 class="visually-hidden">Услуги</h2>
-          <div class="content-wrapper">
-            <p class="sect-caption">Приезжайте в&nbsp;Седону отдохнуть в&nbsp;комфорте и&nbsp;уюте!</p>
+          <header class="servies-header content-wrapper">
+            <p class="sect-caption">Приезжайте в&nbsp;Седону отдохнуть <span class="line-break-span">в&nbsp;комфорте
+                и&nbsp;уюте!</span></p>
             <p class="sect-description">Опытный персонал и&nbsp;качественное обслуживание!</p>
-          </div>
+          </header>
           <ul class="servies-list card-list">
-            <li class="servies-item card">
+            <li class="servies-item servies-icon-1 card ">
               <h3 class="card-title">Жильё</h3>
-              <p class="card-discription">Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
-            </li>
-            <li class="servies-item card">
-              <h3 class="card-title">Еда</h3>
-              <p class="card-discription">Всегда заказывайте топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
+              <p class="card-description">Рекомендуем пожить в&nbsp;настоящем мотеле,
+                <span class="line-break-span">всё как в&nbsp;кино!</span>
               </p>
             </li>
-            <li class="servies-item card">
+            <li class="servies-item servies-icon-2 card">
+              <h3 class="card-title">Еда</h3>
+              <p class="card-description">Всегда заказывайте
+                <span class="line-break-span">топовый фирменный бургер,</span> вы&nbsp;не&nbsp;разочаруетесь!
+              </p>
+            </li>
+            <li class="servies-item servies-icon-3 card">
               <h3 class="card-title">Сувениры</h3>
-              <p class="card-discription">Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного производства!
+              <p class="card-description">Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного производства!
               </p>
             </li>
           </ul>
@@ -134,8 +143,9 @@
         <section class="hotel-search content-wrapper">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="sect-caption">Заинтересовались?</p>
-          <p class="sect-description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения
-            гостиниц в&nbsp;Седоне</p>
+          <p class="sect-description">Укажите предполагаемые даты поездки, <span
+              class="line-break-span">и&nbsp;мы&nbsp;покажем вам лучшие предложения
+              гостиниц в&nbsp;Седоне</span></p>
           <button class="button hotel-search-button secondary-color" type="button">Поиск гостиницы
             в&nbsp;Седоне</button>
         </section>
@@ -147,8 +157,9 @@
 
         <section class="subscribe content-wrapper subscribe-theme-custom">
           <h2 class="sect-caption subscribe-title">Подпишитесь на&nbsp;рассылку</h2>
-          <p class="sect-description subscribe-description">Только полезная информация и&nbsp;никакого спама, честное
-            бойскаутское!</p>
+          <p class="sect-description subscribe-description">Только полезная информация и&nbsp;никакого спама, <span
+              class="line-break-span">честное
+              бойскаутское!</span></p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email">
               <span class="visually-hidden">Email</span>
