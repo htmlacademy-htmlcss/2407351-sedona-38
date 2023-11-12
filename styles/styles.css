@@ -120,6 +120,16 @@ body {
   z-index: 2;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
@@ -133,21 +143,26 @@ body {
 
 .navigation-user-link {
   display: block;
-  min-width: 20px;
-  min-height: 20px;
+  width: 20px;
+  height: 20px;
   padding: 22px 12px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.navigation-user-search {
-  background-image: url("../images/icons/search.svg");
-  background-size: 19px 19px;
+.navigation-user-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
 }
 
-.navigation-user-favorites {
-  background-image: url("../images/icons/heart.svg");
-  background-size: 18px 17px;
+.navigation-user-link:hover,
+.navigation-user-link:focus {
+  color: #756157;
+}
+
+.navigation-user-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .favorites-number {
@@ -162,6 +177,7 @@ body {
   padding: 5px;
   margin-top: -12px;
   margin-left: 7px;
+  overflow: hidden;
 }
 
 .button {
@@ -172,7 +188,6 @@ body {
   line-height: 20px;
   font-weight: 700;
   color: #ffffff;
-  /* background-color: #82b3d3; */
   border: 0;
   border-radius: 4px;
   text-decoration: none;
@@ -407,6 +422,19 @@ body {
 .newsletter-field::placeholder {
   color: rgba(0, 0, 0, 0.6);
   opacity: 1;
+}
+
+.newsletter-field:hover {
+  background-color: #ececec;
+}
+
+.newsletter-field:focus {
+  outline-color: #82b3d3;
+}
+
+.newsletter-field:disabled {
+  background-color: #ececec;
+  color: #585858;
 }
 
 .newsletter-button {
@@ -659,7 +687,6 @@ body {
 
 .catalog-filter-accept {
   margin-bottom: 32px;
-  /* background-color: #82b3d3; */
 }
 
 .catalog-filter-reset {
@@ -690,16 +717,36 @@ body {
   text-transform: uppercase;
 }
 
-.catalog-header select {
+.select-wrapper {
+  position: relative;
+  display: flex;
   min-width: 292px;
+  width: 292px;
   margin-right: 70px;
   margin-left: 20px;
-  padding: 10px 16px;
+}
+
+.select-control {
+  width: 100%;
+  padding: 12px 18px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
+  background-image: url("../images/icons/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  appearance: none;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border-color: #68a2ca;
+}
+
+.select-control:focus {
+  outline: 1px solid #68a2ca;
 }
 
 .catalog-view {
@@ -725,16 +772,14 @@ body {
   text-decoration: none;
 }
 
-.catalog-view-button-current {
-  border-color: #000000;
-}
-
+.catalog-view-button-current,
 .catalog-view-button:hover {
   border-color: #000000;
 }
 
 .catalog-view-button:focus {
   border-color: #68a2ca;
+  outline: 1px solid #68a2ca;
 }
 
 .catalog-view-button:active {
@@ -891,6 +936,7 @@ body {
   font-weight: 400;
   color: #000000;
   background: none;
+  cursor: default;
 }
 
 .brand-color {
@@ -903,35 +949,56 @@ body {
   background-color: #7db54f;
 }
 
-.brand-color.button:hover {
+.brand-color:hover,
+.brand-color:focus {
   background-color: #68a2ca;
 }
-.brand-color.button:focus {
-  background-color: #68a2ca;
-}
-.brand-color.button:active {
+.brand-color:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.secondary-color.button:hover {
+.secondary-color:hover,
+.secondary-color:focus {
   background-color: #615048;
 }
-.secondary-color.button:focus {
-  background-color: #615048;
-}
-.secondary-color.button:active {
+.secondary-color:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.favorites-color.button:hover {
+.favorites-color:hover,
+.favorites-color:focus {
   background-color: #6c9e42;
 }
-.favorites-color.button:focus {
-  background-color: #6c9e42;
-}
-.favorites-color.button:active {
+.favorites-color:active {
   background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled,
+.button-disabled,
+.button-disabled:hover {
+  background-color: #e5e5e5;
+}
+
+.transparent-button {
+  background: none;
+}
+
+.transparent-button:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.transparent-button:focus {
+  color: #ffffff;
+  outline-color: #82b3d3;
+}
+
+.transparent-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.transparent-button:disabled{
+  color: rgba(255, 255, 255, 0.1);
 }
