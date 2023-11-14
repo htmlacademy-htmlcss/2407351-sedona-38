@@ -205,6 +205,62 @@
       <!-- footer -->
 
     </div>
+
+    <!-- modal -->
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form action="https://echo.htmlacademy.ru/" method="get">
+            <p class="search-field-group">
+              <label class="search-form-label" for="checkin">Дата заезда:</label>
+              <span class="alert-wrapper">
+                <input class="field-input search-form-date" type="text" name="checkin" id="checkin" placeholder="Укажите дату" maxlength="35" value="27 апреля 2020" required>
+                <span class="alert alert-invalid">Мы не можем отправить вас в прошлое.</span>
+              </span>
+            </p>
+            <p class="search-field-group">
+              <label class="search-form-label" for="checkout">Дата выезда:</label>
+              <span class="alert-wrapper">
+                <input class="field-input search-form-date" type="text" name="checkout" id="checkout" placeholder="Укажите дату" maxlength="35" value="1 сентября 2023" required>
+                <span class="alert">На эти даты есть свободные номера. Пока есть.</span>
+              </span>
+            </p>
+            <p class="search-field-group count-field-group">
+              <span class="small-group">
+                <label class="search-form-label" for="adults">Взрослые:</label>
+                <button class="button-toggle button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить число</span>
+                </button>
+                <input class="field-input count-input" type="number" name="adults" id="adults" placeholder="1" min="1" max="99" value="2" required>
+                <button class="button-toggle button-plus" type="button">
+                  <span class="visually-hidden">Увеличить число</span>
+                </button>
+              </span>
+              <span class="small-group">
+                <label class="search-form-label" for="children">Дети:</label>
+                <button class="info-button" type="button">
+                  <span class="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </button>
+                <button class="button-minus button-toggle" type="button">
+                  <span class="visually-hidden">Уменьшить число</span>
+                </button>
+                <input class="field-input count-input" id="children" name="children" type="number" placeholder="0" min="0" max="99" value="2" required>
+                <button class="button-plus button-toggle" type="button">
+                  <span class="visually-hidden">Увеличить число</span>
+                </button>
+              </span>
+            </p>
+            <button class="button brand-color button-modal-submit" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+    <!-- modal -->
+
   </body>
 
 </html>
