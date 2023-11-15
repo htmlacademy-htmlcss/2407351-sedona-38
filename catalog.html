@@ -14,7 +14,7 @@
     <div class="page-container">
 
       <!-- header -->
-      <header class="page-header">
+      <header class="page-header" data-test="header" >
         <nav class="navigation content-wrapper">
           <a class="logo" href="index.html">
             <img src="images/sedona-logo.svg" width="138" height="64" alt="Логотип City of Sedona.">
@@ -60,7 +60,7 @@
             </li>
           </ul>
 
-          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <div class="groups-wrapper">
               <fieldset class="catalog-filter-group catalog-filter-infr">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -151,9 +151,9 @@
       <!-- header -->
 
       <!-- main -->
-      <main class="main-container catalog-main">
+      <main class="main-container catalog-main" data-test="main">
 
-        <section class="catalog content-wrapper">
+        <section class="catalog content-wrapper" data-test="catalog">
 
           <header class="catalog-header">
             <h2 class="catalog-offers-found">Найдено гостиниц: 38</h2>
@@ -295,7 +295,7 @@
       <!-- footer -->
       <footer class="page-footer">
 
-        <section class="subscribe content-wrapper">
+        <section class="subscribe content-wrapper" data-test="subscribe">
           <h2 class="sect-caption subscribe-title">Подпишитесь на рассылку</h2>
           <p class="sect-description subscribe-description">Только полезная информация и&nbsp;никакого спама, <span
               class="line-break-span">честное
@@ -310,7 +310,7 @@
           </form>
         </section>
 
-        <div class="page-footer-container content-wrapper">
+        <div class="page-footer-container content-wrapper" data-test="footer">
           <section class="social">
             <h2 class="visually-hidden">Ссылки на социальные сети.</h2>
             <ul class="social-list">
