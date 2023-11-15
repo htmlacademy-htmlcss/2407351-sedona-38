@@ -612,6 +612,7 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
+/*Модальное окно*/
 .modal-container {
   position: fixed;
   top: 0;
@@ -933,6 +934,7 @@ body {
   display: none;
 }
 
+/*Страница catalog.html*/
 .catalog-hero {
   padding: 35px 70px 70px;
   color: #ffffff;
@@ -1010,14 +1012,21 @@ body {
 }
 
 .catalog-filter-form {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+.groups-wrapper {
   display: flex;
-  justify-content: left;
+  flex-wrap: wrap;
+  gap: 50px 70px;
+  max-width: 700px;
 }
 
 .catalog-filter-group {
   margin: 0;
-  margin-right: 70px;
   padding: 0;
+  min-width: 150px;
   border: 0;
 }
 
@@ -1026,17 +1035,17 @@ body {
   padding: 0;
 }
 
-.catalog-filter-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .catalog-filter-title {
   margin-bottom: 32px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .catalog-filter-item {
@@ -1049,8 +1058,68 @@ body {
   margin-bottom: 0;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  background-color: #e2e2e2;
+}
+
+.control-input:disabled + .control-mark {
+  background-color: #c9c9c9;
+}
+
+.control-input:disabled ~ .control-label {
+  color: #c9c9c9;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 0;
+  right: 0;
+  background-image: url("../images/icons/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.radio-control-mark {
+  display: flex;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .radio-control-mark::before{
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #3f5e72;
+  content: "";
+}
+
 .filter-wrap {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-content: start;
+  gap: 10px 70px;
+  max-width: 550px;
   margin-left: auto;
 }
 
@@ -1156,7 +1225,7 @@ body {
 }
 
 .catalog-filter-buttons {
-  align-self: flex-end;
+  padding-top: 56px;
 }
 
 .catalog-filter-accept {
