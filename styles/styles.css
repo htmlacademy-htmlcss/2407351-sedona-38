@@ -667,9 +667,13 @@ body {
   mask-position: center;
 }
 
-.modal-close-button:not(:disabled):hover,
-.modal-close-button:focus {
-  background-color: #e2e2e2;
+.modal-close-button:not(:disabled):hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-close-button:not(:disabled):active {
@@ -677,7 +681,7 @@ body {
 }
 
 .modal-close-button:active::before {
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 .modal-close-button:disabled {
@@ -835,15 +839,15 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.button-toggle:focus::before {
+.button-toggle:not(:disabled):hover::before {
   background-color: #000000;
 }
 
-.button-toggle:focus {
-  background-color: #e6e6e6;
+.button-toggle:focus-visible::before {
+  background-color: #000000;
 }
 
-.button-toggle:focus::after {
+.button-toggle:focus-visible::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -853,24 +857,12 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 4px;
-  outline-style: auto;
-}
-
-.button-toggle:not(:disabled):hover::before {
-  background-color: #000000;
-}
-
-.button-toggle:not(:disabled):hover {
-  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .button-toggle:not(:disabled):active::before {
   background-color: #000000;
   opacity: 0.2;
-}
-
-.button-toggle:not(:disabled):active {
-  background-color: #e6e6e6;
 }
 
 .info-button {
@@ -1073,16 +1065,21 @@ body {
   border-radius: 4px;
 }
 
-.control:hover .control-mark {
-  background-color: #e2e2e2;
+.control:hover {
+  opacity: 0.6;
 }
 
-.control-input:disabled + .control-mark {
-  background-color: #c9c9c9;
+.control-input:focus + .control-mark {
+  box-shadow: 0 0 0 3px #83b3d3;
 }
 
-.control-input:disabled ~ .control-label {
-  color: #c9c9c9;
+.control:active {
+  opacity: 0.3;
+}
+
+.control-input:disabled + .control-mark,
+.control-input:disabled ~ .control-label{
+  opacity: 0.6;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1149,9 +1146,17 @@ body {
   appearance: textfield;
 }
 
-.range-input:hover,
-.range-input:focus {
-  background-color: #ebebeb;
+.range-input:hover:not(:disabled) {
+  background-color: #e6e6e6;
+}
+
+.range-input:focus:not(:disabled) {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.range-input:disabled {
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .min-input {
@@ -1203,14 +1208,9 @@ body {
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  background-color: #f1f1f1;
-}
-
 .range-toggle:active,
 .range-toggle:focus {
-  background-color: #ffffff;
-  outline: 2px solid #82b3d3;
+  outline: 3px solid #82b3d3;
 }
 
 .toggle-min {
@@ -1276,6 +1276,7 @@ body {
   line-height: 21px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
+  background-color: #ffffff;
   background-image: url("../images/icons/down-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
@@ -1331,9 +1332,9 @@ body {
   border-color: #000000;
 }
 
-.catalog-view-button:focus {
+.catalog-view-button:focus-visible {
   border-color: #68a2ca;
-  outline: 1px solid #68a2ca;
+  outline: none;
 }
 
 .catalog-view-button:active {
@@ -1563,16 +1564,18 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.transparent-button:focus {
+.transparent-button:focus-visible {
   color: #ffffff;
-  outline-color: #82b3d3;
+  outline: 3px solid #82b3d3;
 }
 
 .transparent-button:active {
   color: rgba(255, 255, 255, 0.3);
+
 }
 
 .transparent-button:disabled{
   color: rgba(255, 255, 255, 0.1);
+  background: none;
   cursor: default;
 }
