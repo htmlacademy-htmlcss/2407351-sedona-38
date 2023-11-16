@@ -349,9 +349,11 @@ body {
   display: block;
   align-self: center;
   width: 800px;
+  height: 100%;
+  object-fit: cover;
 }
 
-.advantages-item:nth-child(even) .advantages-image {
+.advantages-item:nth-child(even) .advantages-image-wrap {
   order: -1;
 }
 
