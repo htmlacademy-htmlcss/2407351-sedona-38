@@ -1071,7 +1071,7 @@ body {
   opacity: 0.6;
 }
 
-.control-input:focus + .control-mark {
+.control-input:focus-visible + .control-mark {
   box-shadow: 0 0 0 3px #83b3d3;
 }
 
@@ -1291,13 +1291,8 @@ body {
   display: none;
 }
 
-.select-control:hover:not(:disabled),
-.select-control:focus:not(:disabled) {
+.select-control:hover:not(:disabled) {
   border-color: #68a2ca;
-}
-
-.select-control:focus:not(:disabled) {
-  outline: 1px solid #68a2ca;
 }
 
 .select-control:disabled {
@@ -1334,9 +1329,10 @@ body {
   border-color: #000000;
 }
 
+.select-control:focus-visible:not(:disabled),
 .catalog-view-button:focus-visible {
   border-color: #68a2ca;
-  outline: none;
+  outline: 1px solid #68a2ca;
 }
 
 .catalog-view-button:active {
