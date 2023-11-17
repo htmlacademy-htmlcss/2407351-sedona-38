@@ -312,7 +312,7 @@ body {
   text-transform: uppercase;
 }
 
-.card-title::after {
+.advantages-card .card-title::after {
   content: "";
   display: block;
   width: 60px;
@@ -330,7 +330,7 @@ body {
   background-color: #f0f6fa;
 }
 
-.advantages-card:not(.wide-advantages-card):nth-child(even) {
+.advantages-card:not(.wide-advantages-card):nth-child(odd) {
   background-color: #e6f0f6;
 }
 
